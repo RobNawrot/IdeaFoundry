@@ -20,38 +20,44 @@
 
     <main class="container pt-5 m-5 border-1">
         
-        <div class="row align-items-center"> 
-            <div class="col">
-                <img class="float-start" src="IMG/IdeaFoundryLogo.png" alt="Idea Foundry Logo">
-            </div>
-            <div class="col-2">
-                <p class="text-end fw-bolder" >Client No: 4908</p>
+        <div class="row justify-content-sm-end">
+            <div class="col-sm-auto d-flex justify-content-end">
+                <button onclick="window.print()" type="button" class="btn btn-dark btn-md">Print this page</button>
             </div>
         </div>
 
-        <!-- Horizontal Spacer -->
-        <hr style="height: 1.5px">
+        <div class="row align-items-center"> 
+            <div class="col-md-auto">
+                <img class="img-fluid mb-3" src="IMG/IdeaFoundryLogo.png" alt="Idea Foundry Logo">
+            </div>
+            <div class="col">
+                <p class="text-end fw-bolder">Client No: 4908</p>
+            </div>
+            <!-- Horizontal Spacer -->
+            <hr style="height: 1.5px">
+        </div>
+
 
         <div class="row">
-            <div class="col ">
+            <div class="col-6 col-md-6">
                 <p class="text-start">
                     <span class="fw-bolder" >Date:</span>
                     05/12/2020
                 </p>
             </div>
-            <div class="col ">
+            <div class="col-6 col-md-6">
                 <p class="text-end">
                     <span class="fw-bolder" >Invoice No:</span>
                     19005
                 </p>
             </div>
+            <!-- Horizontal Spacer -->
+            <hr style="height: 1.5px">
         </div>
 
-        <!-- Horizontal Spacer -->
-        <hr style="height: 1.5px">
 
         <div class="row">
-            <div class="col">
+            <div class="col d-flex justify-content-start">
                 <p class="text-start">
                     <span class="fw-bolder">Invoice To:</span> <br>
                     Mark Davis <br>
@@ -59,7 +65,7 @@
                     Las Vegas, NV 89118 
                 </p>
             </div>
-            <div class="col-2">
+            <div class="col d-flex justify-content-end">
                 <p>
                     <span class="fw-bolder">Pay To:</span> <br>
                     Idea Foundry, Irc. <br>
@@ -68,21 +74,64 @@
                 </p>
             </div>
             
-            
         </div>
         
-
-        <table>
-
-
-        </table>
-
-        <!-- The last four rows displaying the Subtotal, Tax, Total and any related notes.  -->
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-
+        <!-- Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="=col">Service</th>
+                        <th scope="=col">Description</th>
+                        <th scope="=col">Rate</th>
+                        <th scope="=col">QTY</th>
+                        <th scope="=col">Amount</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr class="table-secondary">
+                        <td>Design</td>
+                        <td>Website Design</td>
+                        <td>$60.00</td>
+                        <td>10</td>
+                        <td>$600.00</td>
+                    </tr>
+                    <tr>
+                        <td>Development</td>
+                        <td>Website Development</td>
+                        <td>$150.00</td>
+                        <td>10</td>
+                        <td>$1500.00</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>Deployment</td>
+                        <td>Deployment and Hosting</td>
+                        <td>$450.00</td>
+                        <td>1</td>
+                        <td>$450.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Sub Total:</td>
+                        <td>$2550.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Tax:</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total:</td>
+                        <td>$2550.00</td>
+                    </tr>
+                </tbody>
+    
+                <caption>
+                    <span class="fw-bolder text-black">NOTE:</span>
+                    This is a computer generated receipt and does not require physical signature.    
+                </caption>
+    
+            </table>
+        </div>
 
     </main>
     
