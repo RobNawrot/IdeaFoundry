@@ -3,3 +3,19 @@ main {
     border-width: 2px;
     border-color: rgba(202, 202, 202, 0.799);
 }
+
+.address {
+    font-size: .8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .address {
+        font-size: 1rem;
+    }
+}
+
+@media print {
+    .address {
+        font-size: 1rem;
+    }
+}
